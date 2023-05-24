@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Chat</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- head -->
+    <div class="MainOfAll">
+      <header class="Header-container">
+        <div class="leftNav">
+          <i class="fa-solid fa-video"></i>
+          <h1 class="Name">My Chat</h1>
+        </div>
+        <div class="rightNav">
+          <div class="pOfnavRight one">
+            <div class="currentTime"></div>
+            <p class="p1">.</p>
+            <div class="currentWeek"></div>
+            <p class="p2">,</p>
+            <div class="currentMonth"></div>
+          </div>
+          <p class="pOfnavRight" id="supportBtn">
+            <i class="fa-solid fa-question"></i>
+          </p>
+          <p class="pOfnavRight" id="ReportBtn">
+            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+          </p>
+          <p class="pOfnavRight" id="settings">
+            <i class="fa-solid fa-gear"></i>
+          </p>
+          <p class="pOfnavRight five">
+            <i class="fa-solid fa-list-ul"></i>
+          </p>
+          <p class="pOfnavRight six">
+            <i class="fa-solid fa-user"></i>
+          </p>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main id="Main-container">
+        <div class="leftPortion">
+          <div class="leftPortionHead">
+            <h1>Premium video meeting Now free for everyone</h1>
+            <p>
+              We re-engineered the service we built for secure business
+              meetings, Google Meet, to make it free and available for all.
+            </p>
+            <div class="buttons">
+              <button>☏ New meeting</button>
+              <input type="text" placeholder=" ⌨  Enter a code or link" />
+            </div>
+          </div>
+          <div class="leftPortionfooter">
+            <h3><a href=""> Learn more</a> about My-chat</h3>
+          </div>
+        </div>
+
+        <!-- rightPortion -->
+        <div class="rightPortion">
+          <!-- headOfRightPortion  -->
+          <div class="headOfrightPortion">
+            <div class="introImages">
+              <img
+                src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg"
+                alt=""
+                id="img1"
+              />
+              <img
+                src="https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg"
+                alt=""
+                id="img2"
+                class="img2OfRightPortion"
+              />
+            </div>
+            <button id="leftArrow">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button id="rightArrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <!-- footerOfRightPortion -->
+          <div class="footerOfRightPortion">
+            <h1 id="h1Fotter">Get a link you can share</h1>
+            <p id="pOfFooterOfRightPortion">
+              click New meeting to get a link you can send to people you want to
+              meet with
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- support -->
+    <div id="MainContainerOfSupport" class="ActiveSupport">
+      <i class="fa-solid fa-xmark" id="exitSupport"></i>
+      <button>Help</button>
+      <button>Terms of service</button>
+      <button>Privacy Policy</button>
+      <button>Terms summary</button>
+    </div>
+
+    <!-- report a Problem -->
+    <div id="containerOfReportaProblem" class="activeReport">
+      <div class="headingOfReport">
+        <h1>Send feedback to Google</h1>
+        <i class="fa-solid fa-xmark" id="exitReport"></i>
+      </div>
+      <div class="imgOfProblem">
+        <img
+          src="https://www.gstatic.com/uservoice/feedback/client/web/live/intent_selection_header.png"
+          alt=""
+        />
+      </div>
+      <div class="containerOfbtnReport">
+        <button class="btnOfReport">
+          <i class="fa-solid fa-flag"></i> Report an issue
+        </button>
+        <button class="btnOfReport">
+          <i class="fa-solid fa-lightbulb"></i>Suggest an Idea
+        </button>
+      </div>
+    </div>
+
+    <!-- report an Issue -->
+    <div class="rAi">
+      <div class="headerOfrAiH">
+        <i class="fa-solid fa-arrow-left"></i>
+        <h1>Report an issue to My chat</h1>
+        <i class="fa-solid fa-xmark" id="exitrAi"></i>
+      </div>
+
+      <div class="mainOfrAi">
+        <h1 class="firstH1">When you noticed this issue, what were you trying to do?</h1>
+        
+        <div class="firstInput">
+          <h1>Choose an Option</h1>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        
+        <h1 class="secondH1">Describe Your Issue</h1>
+        <div class="secondInput">
+          <textarea id="" cols="10" rows="6" placeholder="Tell us what happened and what's not working"></textarea>
+        </div>
+
+        <p class="firstP">
+          Please don't include any sensitive information
+          <i class="fa-solid fa-question"></i>
+        </p>
+
+        <h1 class="thirdH1">
+          A screenshot will help us better understand the issue. (optional)
+        </h1>
+        <button class="FirstbtnOfrAi"><i class="fa-solid fa-desktop"></i>Capture screenshot</button>
+        
+        <div class="thirdInput">
+          <input type="checkbox" />
+          <h1 class="forthH1">We may email you for more information or updates</h1>
+        </div>
+        <p class="secondP">
+          Some <a href="#">account and system information </a> be sent to
+          Google. We will use it to fix problems and improve our services,
+          subject to our <a href="#"> Privacy Policy </a>and
+          <a href="#">Terms of Service.</a> We may email you for more
+          information or updates. Go to <a href="#"> Legal Help </a>to ask for
+          content changes for legal reasons.
+        </p>
+      </div>
+
+      <div class="footerOfrAi">
+        <button>Send</button>
+      </div>
+    </div>
+
+    <!-- setting -->
+
+    <div id="containerSetting" class="active mainPage">
+      <div class="leftPortationSetting">
+        <h1>Setting</h1>
+        <button>
+          <i class="fa-sharp fa-solid fa-headphones-simple"></i>Audio
+        </button>
+        <button><i class="fa-solid fa-video"></i>Video</button>
+        <button><i class="fa-solid fa-gear"></i>General</button>
+      </div>
+
+      <div class="rightPortaitionSetting">
+        <div id="microPage">
+          <h1>Microphone</h1>
+          <i class="fa-solid fa-xmark" id="exit"></i>
+        </div>
+        <div class="microphoneBox">
+          <div class="inputMicroPhone inputing">
+            <div class="text">Default</div>
+            <div class="arrow">
+              <i class="fa-sharp fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="mic"><i class="fa-solid fa-microphone-lines"></i></div>
+        </div>
+        <h1>Speaker</h1>
+        <div class="SpeakerBox">
+          <div class="inputSpeaker inputing">
+            <div class="text">Default</div>
+            <div class="arrow">
+              <i class="fa-sharp fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="Speaker">
+            <i class="fa-sharp fa-solid fa-volume-high"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

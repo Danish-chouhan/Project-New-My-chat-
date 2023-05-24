@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+.MainOfAll{
+  position: fixed;
+}
+.Header-container {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.382);
+  filter:blur(2px) brightness(0.2);
+}
+.leftNav i {
+  font-size: 40px;
+}
+.leftNav {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  padding-left: 10px;
+  align-items: center;
+}
+.Name {
+  padding-left: 10px;
+}
+.rightNav {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rightNav i {
+  font-size: 20px;
+}
+.rightNav i:hover {
+  color: rgb(172, 158, 158);
+}
+.pOfnavRight {
+  margin-right: -100px;
+}
+.five {
+  margin-left: 20px;
+}
+.one {
+  display: flex;
+  font-size: 18px;
+  margin-left: 80px;
+  color: gray;
+}
+.one p {
+  margin: 0 5px 0 5px;
+}
+
+/* main */
+
+main {
+  display: flex;
+  height: 100%;
+  margin: 100px 200px 0px 60px;
+  filter:blur(2px) brightness(0.2);
+
+}
+main img {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+}
+.leftPortion {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 80px 0px 0px;
+  text-align: start;
+  width: 50%;
+}
+.leftPortion h1 {
+  font-size: 45px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+.leftPortion p {
+  font-size: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+}
+.leftPortion button {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  background-color: rgb(66, 66, 215);
+  color: aliceblue;
+  border: transparent;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+.leftPortion button:hover{
+  transition: 0.3s ease;
+   box-shadow: 0 0 0;
+}
+
+.leftPortion input {
+  height: 45px;
+  width: 340px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding: 0 15px;
+}
+.leftPortionfooter {
+  margin-top: 50px;
+  border-top: 1px solid rgb(129, 121, 121);
+  padding: 30px 0;
+}
+
+.leftPortionfooter a {
+  color: rgb(124, 124, 243);
+  text-decoration: none;
+}
+.leftPortionfooter a:hover {
+  color: rgb(23, 23, 194);
+  text-decoration: none;
+  cursor: pointer;
+}
+.rightPortion {
+  display: flex;
+  margin: 0 -200px 0 0px;
+  text-align: center;
+  width: 50%;
+  font-size: 15px;
+}
+.headOfrightPortion {
+  display: flex;
+}
+.headOfrightPortion button {
+  position: absolute;
+  bottom: 30%;
+}
+#rightArrow {
+  right: 25%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: transparent;
+  background-color: transparent;
+}
+#leftArrow {
+  right: 33%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: transparent;
+  background-color: transparent;
+}
+#leftArrow:hover,#rightArrow:hover{
+ color: rgb(112, 112, 116);
+ transition: 0.2s ease-in-out;
+ cursor: pointer;
+}
+
+.img1OfRightPortion {
+  visibility: hidden;
+}
+.img2OfRightPortion {
+  visibility: hidden;
+}
+.img3OfRightPortion {
+  visibility: hidden;
+}
+
+.rightPortion img {
+  padding: 0 120px;
+}
+
+.footerOfRightPortion {
+  margin-top: 380px;
+}
+.footerOfRightPortion h1 {
+  font-size: 30px;
+}
+.footerOfRightPortion p{
+  font-size: 20px;
+}
+
+
+/* support container */
+
+#MainContainerOfSupport{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 300px;
+  padding: 10px 0;
+  box-shadow: 5px 5px 10px rgb(133, 132, 132);
+  position: absolute;
+  top: 45px;
+  left: 830px;
+}
+
+#MainContainerOfSupport button{
+  text-align: left;
+  font-size: 18px;
+  height: 25%;
+  background-color:white;
+  border: transparent;
+  padding: 10px;
+}
+#MainContainerOfSupport button:hover{
+  background-color: rgb(239, 238, 238);
+}
+#MainContainerOfSupport i{
+  text-shadow: 1px 1px 2px black;
+  text-align: end;
+  margin: 2px 10px 2px 0;
+}
+.ActiveSupport{
+  visibility: hidden;
+}
+
+/* report a problem */
+.activeReport{
+  /* visibility: hidden; */
+}
+#containerOfReportaProblem{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 97%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 10px 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -5px 5px 10px rgb(71, 70, 70);
+}
+.headingOfReport{
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.headingOfReport i{
+  font-size: 25px;
+  margin: 5px 0 0 0;
+}
+.imgOfProblem{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 80px 30px 80px;
+}
+.containerOfbtnReport{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+}
+.containerOfbtnReport button{
+height:50px;
+border: transparent;
+background-color: transparent;
+text-align: start;
+padding: 0 20px;
+}
+.containerOfbtnReport i{
+  margin: 0 15px 0 0;
+}
+.containerOfbtnReport button:hover{
+  background-color: rgb(235, 235, 235);
+}
+
+/*report an issue */
+
+.rAi {
+  background-color:white;
+  height: 850px;
+  width: 400px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.rAi p{
+  color: rgb(94, 91, 91);
+}
+.rAi h1{
+  color: rgb(67, 66, 66);
+}
+.headerOfrAiH{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px 10px;
+  background-color: white;
+  box-shadow: 5px 0px 10px rgb(75, 73, 73);
+}
+.headerOfrAiH h1{
+  font-size: 20px;
+}
+.headerOfrAiH i {
+  padding: 0px 10px;
+  font-size: 25px;
+}
+.firstH1{
+  font-size: 13px;
+  margin: 35px 15px 15px 15px;
+}
+.firstInput{
+  display: flex;
+  border: 1px solid black;
+  margin: 15px 15px 15px 15px;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0px 10px;
+  height: 60px;
+}
+.firstInput h1{
+  margin: 18px 0 0 0;
+  font-size: 15px;
+}
+.firstInput i{
+  padding: 20px;
+}
+.secondH1{
+  font-size: 17px;
+  margin: 25px 20px 5px 20px ;
+}
+.secondInput textarea{
+  width: 85%;
+  margin: 10px 0px 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.firstP{
+  font-size: 13px;
+  margin: 5px 30px 5px 30px;
+}
+.firstP i{
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: white;
+  background-color: black;  
+}
+.thirdH1{
+  font-size: 14px;
+  text-align: left;
+  margin: 30px 30px 15px 30px;
+}
+.FirstbtnOfrAi{
+  margin: 20px 20px 20px 20px;
+  background-color: white;
+  color: rgb(115, 115, 173);
+  border: 1px solid rgb(72, 70, 70) ;
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+}
+.FirstbtnOfrAi i{
+  padding: 0 10px;
+}
+.FirstbtnOfrAi:hover{
+  background-color:  rgba(95, 95, 142, 0.603);
+  color: white;
+}
+.thirdInput{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 32px;
+}
+.thirdInput h1{
+  font-size: 12px;
+}
+.secondP{
+  font-size: 11px;
+  margin: 10px 20px 10px 20px;
+  text-align: justify;
+}
+.secondP a{
+  text-decoration: none;
+}
+
+.footerOfrAi{
+  box-shadow: 10px 0 10px rgb(112, 112, 112);
+}
+.footerOfrAi button{
+  margin: 25px 0px 20px 270px;
+  height: 40px;
+  width: 120px;
+  border: transparent;
+  background-color: rgb(182, 182, 182);
+  color: black;
+}
+/* setting container */
+
+#containerSetting{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  border: 1px solid black;
+  height: 88%;
+  position: absolute;
+  top: 9%;
+  left: 15%;
+  font-size: 10px;
+  box-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+#containerSetting i{
+  padding-right: 10px;
+  font-size: 20px;
+}
+.active{
+  visibility: hidden;
+  /* opacity: 1;
+  transform: translateX(10%); */
+  /* transition: all 0.6s ease-in; */
+}
+
+.leftPortationSetting{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+border-right:1px solid black;
+}
+.leftPortationSetting h1{
+  margin: 30px 0 30px 40px;
+}
+.leftPortationSetting button{
+  margin: 10px 100px 20px 0;
+  width: 200px;
+  height: 50px;
+  border: 1px solid rgb(52, 47, 47);
+  background-color: transparent;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.leftPortationSetting button:active{
+  background-color: rgb(73, 73, 202);
+  color: white;
+};
+
+.rightPortaitionSetting{
+  display: flex;
+  flex-direction: column;
+}
+.rightPortaitionSetting h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.microphoneBox{
+  display: flex;
+  flex-direction: row;margin-top: 30px;
+}
+.SpeakerBox{
+  display: flex;
+  flex-direction: row;
+}
+.inputing{
+ width:400px;
+ border-radius: 10px;
+ height: 40px;
+ border: 1px solid black;
+ display: flex;
+ justify-content: space-between; 
+ padding-top: 10px;
+ margin-right: 15px;
+ padding-left: 30px;
+ font-size: 15px;
+}
+#microPage{
+  display: flex;
+  justify-content: space-between;
+}
+#microPage i{
+  margin-top: 3%;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px black;
+}
