@@ -6,17 +6,26 @@
 }
 
 /* header */
-.MainOfAll{
+.MainOfAll {
   position: fixed;
 }
 .Header-container {
+  padding: 10px 10px;
   font-size: 12px;
   display: flex;
   justify-content: space-between;
   background-color: white;
-  border-bottom: 1px solid black;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.382);
-  filter:blur(2px) brightness(0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.382);
+}
+header button{
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+header button:hover{
+  background-color: rgba(227, 227, 227, 0.434);
 }
 .leftNav i {
   font-size: 40px;
@@ -40,9 +49,7 @@
 .rightNav i {
   font-size: 20px;
 }
-.rightNav i:hover {
-  color: rgb(172, 158, 158);
-}
+
 .pOfnavRight {
   margin-right: -100px;
 }
@@ -65,8 +72,7 @@ main {
   display: flex;
   height: 100%;
   margin: 100px 200px 0px 60px;
-  filter:blur(2px) brightness(0.2);
-
+  background-color: white;
 }
 main img {
   height: 300px;
@@ -100,9 +106,9 @@ main img {
   box-shadow: 2px 2px 5px black;
   cursor: pointer;
 }
-.leftPortion button:hover{
+.leftPortion button:hover {
   transition: 0.3s ease;
-   box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
 }
 
 .leftPortion input {
@@ -160,10 +166,11 @@ main img {
   border: transparent;
   background-color: transparent;
 }
-#leftArrow:hover,#rightArrow:hover{
- color: rgb(112, 112, 116);
- transition: 0.2s ease-in-out;
- cursor: pointer;
+#leftArrow:hover,
+#rightArrow:hover {
+  color: rgb(112, 112, 116);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .img1OfRightPortion {
@@ -186,15 +193,14 @@ main img {
 .footerOfRightPortion h1 {
   font-size: 30px;
 }
-.footerOfRightPortion p{
+.footerOfRightPortion p {
   font-size: 20px;
 }
 
-
 /* support container */
 
-#MainContainerOfSupport{
-  background-color:white;
+#MainContainerOfSupport {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -205,114 +211,121 @@ main img {
   position: absolute;
   top: 45px;
   left: 830px;
+  position: fixed ;
 }
 
-#MainContainerOfSupport button{
+#MainContainerOfSupport button {
   text-align: left;
   font-size: 18px;
   height: 25%;
-  background-color:white;
+  background-color: white;
   border: transparent;
   padding: 10px;
 }
-#MainContainerOfSupport button:hover{
+#MainContainerOfSupport button:hover {
   background-color: rgb(239, 238, 238);
 }
-#MainContainerOfSupport i{
+#MainContainerOfSupport i {
   text-shadow: 1px 1px 2px black;
   text-align: end;
   margin: 2px 10px 2px 0;
 }
-.ActiveSupport{
+.ActiveSupport {
   visibility: hidden;
 }
 
 /* report a problem */
-.activeReport{
-  /* visibility: hidden; */
+.activeReport {
+  visibility: hidden;
 }
-#containerOfReportaProblem{
+#containerOfReportaProblem {
   display: flex;
   flex-direction: column;
   width: 400px;
   height: 97%;
   position: absolute;
+  position: fixed;
   top: 0%;
   right: 0%;
   padding: 10px 0px;
   background-color: rgb(255, 255, 255);
-  box-shadow: -5px 5px 10px rgb(71, 70, 70);
+  box-shadow: -5px 0px 10px rgb(202, 202, 202);
 }
-.headingOfReport{
+.headingOfReport {
   font-size: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 5px 10px;
 }
-.headingOfReport i{
+.headingOfReport i {
   font-size: 25px;
   margin: 5px 0 0 0;
 }
-.imgOfProblem{
+.imgOfProblem {
   display: flex;
   flex-direction: column;
   margin: 30px 80px 30px 80px;
 }
-.containerOfbtnReport{
+.containerOfbtnReport {
   display: flex;
   flex-direction: column;
   margin: 10px 0px 10px 0px;
 }
-.containerOfbtnReport button{
-height:50px;
-border: transparent;
-background-color: transparent;
-text-align: start;
-padding: 0 20px;
+.containerOfbtnReport button {
+  height: 50px;
+  border: transparent;
+  background-color: transparent;
+  text-align: start;
+  padding: 0 20px;
 }
-.containerOfbtnReport i{
+.containerOfbtnReport i {
   margin: 0 15px 0 0;
 }
-.containerOfbtnReport button:hover{
+.containerOfbtnReport button:hover {
   background-color: rgb(235, 235, 235);
 }
 
 /*report an issue */
 
-.rAi {
-  background-color:white;
+.ActiverAi {
+  visibility: hidden;
+}
+
+#rAi {
+  background-color: white;
   height: 850px;
   width: 400px;
   position: absolute;
   top: 0%;
   right: 0%;
+  box-shadow: -5px 0px 10px rgb(221, 221, 221);
 }
-.rAi p{
+#rAi p {
   color: rgb(94, 91, 91);
 }
-.rAi h1{
+#rAi h1 {
   color: rgb(67, 66, 66);
 }
-.headerOfrAiH{
+.headerOfrAiH {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px 20px 10px;
   background-color: white;
   box-shadow: 5px 0px 10px rgb(75, 73, 73);
 }
-.headerOfrAiH h1{
+.headerOfrAiH h1 {
   font-size: 20px;
 }
 .headerOfrAiH i {
   padding: 0px 10px;
   font-size: 25px;
 }
-.firstH1{
+.firstH1 {
   font-size: 13px;
   margin: 35px 15px 15px 15px;
 }
-.firstInput{
+#firstInput {
   display: flex;
   border: 1px solid black;
   margin: 15px 15px 15px 15px;
@@ -321,77 +334,214 @@ padding: 0 20px;
   padding: 0px 10px;
   height: 60px;
 }
-.firstInput h1{
+#firstInput h1 {
   margin: 18px 0 0 0;
   font-size: 15px;
 }
-.firstInput i{
+#firstInput i {
   padding: 20px;
 }
-.secondH1{
-  font-size: 17px;
-  margin: 25px 20px 5px 20px ;
+#downBtn{
+  border: transparent;
+  background-color: transparent;
 }
-.secondInput textarea{
+.secondH1 {
+  font-size: 17px;
+  margin: 25px 20px 5px 20px;
+}
+.secondInput textarea {
   width: 85%;
   margin: 10px 0px 10px 20px;
   border-radius: 5px;
   border: 1px solid black;
   padding: 10px;
 }
-.firstP{
+.firstP {
   font-size: 13px;
   margin: 5px 30px 5px 30px;
 }
-.firstP i{
+.firstP i {
   font-size: 15px;
   border: 1px solid black;
   border-radius: 50px;
   color: white;
-  background-color: black;  
+  background-color: black;
 }
-.thirdH1{
+.thirdH1 {
   font-size: 14px;
   text-align: left;
   margin: 30px 30px 15px 30px;
 }
-.FirstbtnOfrAi{
+.FirstbtnOfrAi {
   margin: 20px 20px 20px 20px;
   background-color: white;
   color: rgb(115, 115, 173);
-  border: 1px solid rgb(72, 70, 70) ;
+  border: 1px solid rgb(72, 70, 70);
   border-radius: 5px;
   width: 90%;
   height: 40px;
 }
-.FirstbtnOfrAi i{
+.FirstbtnOfrAi i {
   padding: 0 10px;
 }
-.FirstbtnOfrAi:hover{
-  background-color:  rgba(95, 95, 142, 0.603);
+.FirstbtnOfrAi:hover {
+  background-color: rgba(95, 95, 142, 0.603);
   color: white;
+  border: 4px solid blue;
 }
-.thirdInput{
+.thirdInput {
   display: flex;
   justify-content: space-between;
   padding: 10px 32px;
 }
-.thirdInput h1{
+.thirdInput h1 {
   font-size: 12px;
 }
-.secondP{
+.secondP {
   font-size: 11px;
   margin: 10px 20px 10px 20px;
   text-align: justify;
 }
-.secondP a{
+.secondP a {
   text-decoration: none;
 }
 
-.footerOfrAi{
+.footerOfrAi {
   box-shadow: 10px 0 10px rgb(112, 112, 112);
 }
-.footerOfrAi button{
+.footerOfrAi button {
+  margin: 25px 0px 20px 270px;
+  height: 40px;
+  width: 120px;
+  border: transparent;
+  background-color: rgb(182, 182, 182);
+  color: black;
+}
+/* chose an option Box of report a problem */
+.activeBoxOfOption {
+  visibility: hidden;
+}
+#boxOfOptionrAi {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 15px 15px 15px 15px;
+  justify-content: space-between;
+  height: 60px;
+  position: absolute;
+  top: 22%;
+  right: 0px;
+  width: 92%;
+  height: 300px;
+}
+#boxOfOptionrAi button {
+  height: 100%;
+  border: transparent;
+  background-color: white;
+}
+#boxOfOptionrAi button:hover {
+  background-color: rgb(205, 205, 205);
+}
+/* Suggest an Issue */
+.ActiveSaI {
+  visibility: hidden;
+}
+#SaI {
+  background-color: white;
+  height: 665x;
+  width: 400px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  box-shadow: -5px 0px 10px rgb(221, 221, 221);
+  position: fixed;
+}
+#SaI p {
+  color: rgb(94, 91, 91);
+}
+#SaI h1 {
+  color: rgb(67, 66, 66);
+}
+.headerOfSaI {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px 10px;
+  background-color: white;
+  box-shadow: 5px 0px 10px rgb(75, 73, 73);
+}
+.headerOfSaI h1 {
+  font-size: 20px;
+}
+.headerOfSaI i {
+  padding: 0px 10px;
+  font-size: 25px;
+}
+.secondH1SaI {
+  font-size: 17px;
+  margin: 25px 20px 5px 20px;
+}
+.secondInputSaI textarea {
+  width: 85%;
+  margin: 5px 0px 0px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.firstPSaI {
+  font-size: 13px;
+  margin: 0px 30px 0px 30px;
+}
+.firstPSaI i {
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+}
+.thirdH1SaI {
+  font-size: 14px;
+  text-align: left;
+  margin: 10px 30px 10px 30px;
+}
+
+.FirstbtnOfSaI {
+  margin: 0px 20px 0px 20px;
+  background-color: white;
+  color: rgb(115, 115, 173);
+  border: 1px solid rgb(72, 70, 70);
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+}
+.FirstbtnOfSaI i {
+  padding: 0 10px;
+}
+.FirstbtnOfSaI:hover {
+  background-color: rgba(95, 95, 142, 0.603);
+  color: white;
+  border: 4px solid blue;
+}
+.thirdInputSaI {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 32px 5px 32px;
+}
+.thirdInputSaI h1 {
+  font-size: 12px;
+}
+.secondPSaI {
+  font-size: 11px;
+  margin: 10px 20px 10px 20px;
+  text-align: justify;
+}
+.secondPSaI a {
+  text-decoration: none;
+}
+
+.footerOfSaI {
+  box-shadow: 10px 0 10px rgb(112, 112, 112);
+}
+.footerOfSaI button {
   margin: 25px 0px 20px 270px;
   height: 40px;
   width: 120px;
@@ -401,7 +551,7 @@ padding: 0 20px;
 }
 /* setting container */
 
-#containerSetting{
+#containerSetting {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-evenly;
@@ -410,31 +560,29 @@ padding: 0 20px;
   height: 88%;
   position: absolute;
   top: 9%;
-  left: 15%;
+  left: 19%;
   font-size: 10px;
+  position: fixed;
   box-shadow: 2px 2px 10px rgb(255, 255, 255);
 }
-#containerSetting i{
+#containerSetting i {
   padding-right: 10px;
   font-size: 20px;
 }
-.active{
+.active {
   visibility: hidden;
-  /* opacity: 1;
-  transform: translateX(10%); */
-  /* transition: all 0.6s ease-in; */
 }
 
-.leftPortationSetting{
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-border-right:1px solid black;
+.leftPortationSetting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 1px solid black;
 }
-.leftPortationSetting h1{
+.leftPortationSetting h1 {
   margin: 30px 0 30px 40px;
 }
-.leftPortationSetting button{
+.leftPortationSetting button {
   margin: 10px 100px 20px 0;
   width: 200px;
   height: 50px;
@@ -443,44 +591,45 @@ border-right:1px solid black;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
-.leftPortationSetting button:active{
+.leftPortationSetting button:active {
   background-color: rgb(73, 73, 202);
   color: white;
-};
+}
 
-.rightPortaitionSetting{
+.rightPortaitionSetting {
   display: flex;
   flex-direction: column;
 }
-.rightPortaitionSetting h1{
+.rightPortaitionSetting h1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.microphoneBox{
+.microphoneBox {
   display: flex;
-  flex-direction: row;margin-top: 30px;
+  flex-direction: row;
+  margin-top: 30px;
 }
-.SpeakerBox{
+.SpeakerBox {
   display: flex;
   flex-direction: row;
 }
-.inputing{
- width:400px;
- border-radius: 10px;
- height: 40px;
- border: 1px solid black;
- display: flex;
- justify-content: space-between; 
- padding-top: 10px;
- margin-right: 15px;
- padding-left: 30px;
- font-size: 15px;
+.inputing {
+  width: 400px;
+  border-radius: 10px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-right: 15px;
+  padding-left: 30px;
+  font-size: 15px;
 }
-#microPage{
+#microPage {
   display: flex;
   justify-content: space-between;
 }
-#microPage i{
+#microPage i {
   margin-top: 3%;
   font-size: 30px;
   text-shadow: 1px 1px 2px black;

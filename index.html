@@ -16,8 +16,8 @@
     <div class="MainOfAll">
       <header class="Header-container">
         <div class="leftNav">
-          <i class="fa-solid fa-video"></i>
-          <h1 class="Name">My Chat</h1>
+          <i class="fa-solid fa-video" title="MyChat"></i>
+          <h1 class="Name" title="MyChat">My Chat</h1>
         </div>
         <div class="rightNav">
           <div class="pOfnavRight one">
@@ -28,19 +28,22 @@
             <div class="currentMonth"></div>
           </div>
           <p class="pOfnavRight" id="supportBtn">
-            <i class="fa-solid fa-question"></i>
+            <button><i class="fa-solid fa-question" title="Support"></i></button>
           </p>
           <p class="pOfnavRight" id="ReportBtn">
-            <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+            <button><i
+              class="fa-sharp fa-solid fa-circle-exclamation"
+              title="Report a Problem"
+            ></i></button>
           </p>
           <p class="pOfnavRight" id="settings">
-            <i class="fa-solid fa-gear"></i>
+            <button><i class="fa-solid fa-gear" title="Setting"></i></button>
           </p>
           <p class="pOfnavRight five">
-            <i class="fa-solid fa-list-ul"></i>
+            <button><i class="fa-solid fa-list-ul" title="Google Apps"></i></button>
           </p>
           <p class="pOfnavRight six">
-            <i class="fa-solid fa-user"></i>
+            <button><i class="fa-solid fa-user" title="Google Accout"></i></button>
           </p>
         </div>
       </header>
@@ -121,34 +124,41 @@
         />
       </div>
       <div class="containerOfbtnReport">
-        <button class="btnOfReport">
+        <button id="btnOfReport">
           <i class="fa-solid fa-flag"></i> Report an issue
         </button>
-        <button class="btnOfReport">
+        <button id="btnOfSuggestion">
           <i class="fa-solid fa-lightbulb"></i>Suggest an Idea
         </button>
       </div>
     </div>
 
     <!-- report an Issue -->
-    <div class="rAi">
+    <div id="rAi" class="ActiverAi">
       <div class="headerOfrAiH">
-        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-left" id="backArrowrAi"></i>
         <h1>Report an issue to My chat</h1>
         <i class="fa-solid fa-xmark" id="exitrAi"></i>
       </div>
 
       <div class="mainOfrAi">
-        <h1 class="firstH1">When you noticed this issue, what were you trying to do?</h1>
-        
-        <div class="firstInput">
-          <h1>Choose an Option</h1>
-          <i class="fa-solid fa-caret-down"></i>
+        <h1 class="firstH1">
+          When you noticed this issue, what were you trying to do?
+        </h1>
+
+        <div id="firstInput">
+          <h1 id="h1OfOption">Choose an Option</h1>
+          <button id="downBtn"><i class="fa-solid fa-caret-down"></i></button>
         </div>
-        
+
         <h1 class="secondH1">Describe Your Issue</h1>
         <div class="secondInput">
-          <textarea id="" cols="10" rows="6" placeholder="Tell us what happened and what's not working"></textarea>
+          <textarea
+            id="texting"
+            cols="10"
+            rows="6"
+            placeholder="Tell us what happened and what's not working"
+          ></textarea>
         </div>
 
         <p class="firstP">
@@ -159,11 +169,15 @@
         <h1 class="thirdH1">
           A screenshot will help us better understand the issue. (optional)
         </h1>
-        <button class="FirstbtnOfrAi"><i class="fa-solid fa-desktop"></i>Capture screenshot</button>
-        
+        <button class="FirstbtnOfrAi">
+          <i class="fa-solid fa-desktop"></i>Capture screenshot
+        </button>
+
         <div class="thirdInput">
           <input type="checkbox" />
-          <h1 class="forthH1">We may email you for more information or updates</h1>
+          <h1 class="forthH1">
+            We may email you for more information or updates
+          </h1>
         </div>
         <p class="secondP">
           Some <a href="#">account and system information </a> be sent to
@@ -176,6 +190,67 @@
       </div>
 
       <div class="footerOfrAi">
+        <button id="SendBox">Send</button>
+      </div>
+      <!-- chose an option Box of report a problem -->
+      <div id="boxOfOptionrAi" class="activeBoxOfOption">
+        <button id="btnOfOptionrAi1">Join a Meeting</button>
+        <button id="btnOfOptionrAi2">Speak or hear</button>
+        <button id="btnOfOptionrAi3">View participate Video</button>
+        <button id="btnOfOptionrAi4">Present Contant</button>
+        <button id="btnOfOptionrAi5">View content</button>
+        <button id="btnOfOptionrAi6">Other</button>
+      </div>
+      <!--  -->
+    </div>
+
+    <!-- Suggest an idea to Google -->
+    <div id="SaI" class="ActiveSaI">
+      <div class="headerOfSaI">
+        <i class="fa-solid fa-arrow-left" id="backArrowSaI"></i>
+        <h1>Suggest an idea to MyChat</h1>
+        <i class="fa-solid fa-xmark" id="exitSaI"></i>
+      </div>
+
+      <div class="mainOfSaI">
+        <h1 class="secondH1SaI">Describe Your Suggestion</h1>
+        <div class="secondInputSaI">
+          <textarea
+            id=""
+            cols="10"
+            rows="5"
+            placeholder="Tell us How we can improve our product"
+          ></textarea>
+        </div>
+
+        <p class="firstPSaI">
+          Please don't include any sensitive information
+          <i class="fa-solid fa-question"></i>
+        </p>
+
+        <h1 class="thirdH1SaI">
+          A screenshot will help us better understand the issue. (optional)
+        </h1>
+        <button class="FirstbtnOfSaI">
+          <i class="fa-solid fa-desktop"></i>Capture screenshot
+        </button>
+
+        <div class="thirdInputSaI">
+          <input type="checkbox" />
+          <h1 class="forthH1SaI">
+            We may email you for more information or updates
+          </h1>
+        </div>
+        <p class="secondPSaI">
+          Some <a href="#">account and system information </a> be sent to
+          Google. We will use it to fix problems and improve our services,
+          subject to our <a href="#"> Privacy Policy </a>and
+          <a href="#">Terms of Service.</a> We may email you for more
+          information or updates. Go to <a href="#"> Legal Help </a>to ask for
+          content changes for legal reasons.
+        </p>
+      </div>
+      <div class="footerOfSaI">
         <button>Send</button>
       </div>
     </div>
