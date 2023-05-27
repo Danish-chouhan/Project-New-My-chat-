@@ -4,197 +4,257 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-
-/* header */
 .MainOfAll {
   position: fixed;
 }
-.Header-container {
-  padding: 10px 10px;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.382);
+.brightingHeader {
+  filter: brightness(0.7);
 }
-header button{
-  background-color: transparent;
-  border: none;
+.brightingMain {
+  filter: brightness(0.7);
+}
+/* header */
+
+#Header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  grid-template-rows: 1fr;
+  box-shadow: 10px 10px 10px black;
+}
+
+.leftNav {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  cursor: default;
+}
+.titleOfMychat {
+  display: flex;
+  padding: 5px;
+  font-size: 15px;
+}
+.titleOfMychat i {
+  padding: 5px 5px;
+  font-size: 15px;
+}
+
+/* right Nav */
+.rightNav {
+  display: flex;
+  justify-content: end;
+  background-color: white;
+}
+.dateAndTime {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: default;
+}
+.dateAndTime p {
+  padding: 0px 5px;
+}
+.rightNav i {
+  font-size: 18px;
+}
+
+.rightBtntNav {
+  display: flex;
+  flex-direction: row;
+}
+.rightBtntNav button {
+  padding: 0 0px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
+  margin: 10px 10px 0 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
-header button:hover{
-  background-color: rgba(227, 227, 227, 0.434);
+.rightBtntNav button:hover {
+  background-color: rgb(229, 229, 229);
 }
-.leftNav i {
-  font-size: 40px;
-}
-.leftNav {
-  align-items: center;
-  display: flex;
-  width: 50%;
-  padding-left: 10px;
-  align-items: center;
-}
-.Name {
-  padding-left: 10px;
-}
-.rightNav {
-  display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.rightNav i {
-  font-size: 20px;
-}
-
-.pOfnavRight {
-  margin-right: -100px;
-}
-.five {
-  margin-left: 20px;
-}
-.one {
-  display: flex;
-  font-size: 18px;
-  margin-left: 80px;
-  color: gray;
-}
-.one p {
-  margin: 0 5px 0 5px;
+.rightBtntNav button:active {
+  border: 2px solid rgb(89, 89, 89);
 }
 
 /* main */
+.innerContainerOfMain {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-main {
-  display: flex;
-  height: 100%;
-  margin: 100px 200px 0px 60px;
+/* left partition */
+.leftPartition {
   background-color: white;
-}
-main img {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-}
-.leftPortion {
   display: flex;
   flex-direction: column;
-  margin: 20px 80px 0px 0px;
-  text-align: start;
-  width: 50%;
+  padding: 100px 30px 0 40px;
 }
-.leftPortion h1 {
-  font-size: 45px;
-  text-align: start;
-  margin-bottom: 10px;
+.leftPartition h1 {
+  font-size: 40px;
+  font-weight: 550;
 }
-.leftPortion p {
-  font-size: 20px;
-  letter-spacing: 0px;
-  margin-bottom: 30px;
-}
-.leftPortion button {
-  height: 50px;
-  width: 150px;
+.leftPartition p {
+  margin: 20px 0 40px 0;
   font-size: 18px;
-  background-color: rgb(66, 66, 215);
-  color: aliceblue;
-  border: transparent;
-  box-shadow: 2px 2px 5px black;
-  cursor: pointer;
+  color: rgb(71, 71, 71);
 }
-.leftPortion button:hover {
-  transition: 0.3s ease;
-  box-shadow: 0 0 0;
-}
-
-.leftPortion input {
+.btnsOfMain {
+  display: flex;
   height: 45px;
-  width: 340px;
-  margin-left: 20px;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  padding: 0 15px;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid rgb(208, 208, 208);
 }
-.leftPortionfooter {
-  margin-top: 50px;
-  border-top: 1px solid rgb(129, 121, 121);
-  padding: 30px 0;
+.btnsOfMain button {
+  width: 150px;
+  margin: 0 20px 0 0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgba(31, 31, 227, 0.737);
 }
-
-.leftPortionfooter a {
-  color: rgb(124, 124, 243);
+.btnsOfMain button:hover {
+  background-color: rgba(45, 45, 213, 0.946);
+  box-shadow: 1px 1px 3px black;
+}
+.btnsOfMain input {
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid rgb(169, 169, 169);
+  padding: 20px;
+}
+.btnsOfMain input:hover {
+  border: 1px solid rgb(67, 67, 67);
+}
+.leftPartition a {
+  color: rgb(81, 81, 177);
+  font-weight: 700;
   text-decoration: none;
 }
-.leftPortionfooter a:hover {
-  color: rgb(23, 23, 194);
-  text-decoration: none;
-  cursor: pointer;
-}
-.rightPortion {
-  display: flex;
-  margin: 0 -200px 0 0px;
+/* new meeting container */
+#exitMeet {
   text-align: center;
-  width: 50%;
-  font-size: 15px;
 }
-.headOfrightPortion {
+#exitMeet:hover {
+  background-color: rgb(213, 212, 212);
+}
+#NewMeetingContainer {
   display: flex;
-}
-.headOfrightPortion button {
+  flex-direction: column;
   position: absolute;
-  bottom: 30%;
+  justify-content: space-between;
+  top: 33%;
+  left: 4%;
+  width: 290px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.624);
+  border: 1px solid rgba(114, 114, 114, 0.571);
 }
-#rightArrow {
-  right: 25%;
+#NewMeetingContainer button {
+  text-align: start;
+  font-size: 15px;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  color: black;
+  background-color: white;
+}
+#NewMeetingContainer button:hover {
+  background-color: rgb(213, 212, 212);
+}
+#NewMeetingContainer button i {
+  margin: 0 15px 0 0;
+}
+#NewMeetingContainer a {
+  color: black;
+}
+.activeNewMeetingContainer {
+  visibility: hidden;
+}
+/* right partition */
+
+.rightPartition {
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.rightPartition button {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  font-size: 25px;
-  border: transparent;
-  background-color: transparent;
+  background-color: white;
+  border: none;
+}
+.rightPartition button:hover {
+  background-color: rgb(240, 240, 240);
+}
+.rightPartition button:active {
+  border: 3px solid grey;
+  background-color: white;
+}
+.switchesToChangeTheImage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding: 30px 30px;
+  margin: 40px 0px 0px 35px;
+}
+span {
+  font-weight: 900;
 }
 #leftArrow {
-  right: 33%;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+  position: absolute;
+  right: 39%;
+  top: 27%;
+}
+#rightArrow {
+  position: absolute;
+  right: 10%;
+  top: 27%;
+}
+.images {
+  padding: 0px 100px;
+}
+.images h1 {
+  text-align: center;
   font-size: 25px;
-  border: transparent;
-  background-color: transparent;
+  cursor: default;
 }
-#leftArrow:hover,
-#rightArrow:hover {
-  color: rgb(112, 112, 116);
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
+.images p {
+  text-align: center;
+  font-size: 12px;
+  cursor: default;
 }
-
-.img1OfRightPortion {
+.visible1 {
   visibility: hidden;
 }
-.img2OfRightPortion {
+.visible2 {
   visibility: hidden;
 }
-.img3OfRightPortion {
-  visibility: hidden;
+#image2nd {
+  position: absolute;
+  right: 13.3%;
+}
+.points {
+  display: flex;
+  justify-content: center;
+  color: rgb(192, 192, 192);
 }
 
-.rightPortion img {
-  padding: 0 120px;
+.LeftLi{
+  color: blue;
 }
-
-.footerOfRightPortion {
-  margin-top: 380px;
+.RightLi{
+  color: blue;
 }
-.footerOfRightPortion h1 {
-  font-size: 30px;
-}
-.footerOfRightPortion p {
-  font-size: 20px;
+.defaultLi{
+  color: blue;
 }
 
 /* support container */
@@ -207,11 +267,12 @@ main img {
   height: 200px;
   width: 300px;
   padding: 10px 0;
-  box-shadow: 5px 5px 10px rgb(133, 132, 132);
+  box-shadow: 5px 5px 10px rgb(40, 40, 40);
   position: absolute;
-  top: 45px;
-  left: 830px;
-  position: fixed ;
+  top: 36px;
+  right: 13%;
+  position: fixed;
+  border-radius: 3px;
 }
 
 #MainContainerOfSupport button {
@@ -249,7 +310,7 @@ main img {
   right: 0%;
   padding: 10px 0px;
   background-color: rgb(255, 255, 255);
-  box-shadow: -5px 0px 10px rgb(202, 202, 202);
+  box-shadow: -5px 0px 10px rgb(40, 40, 40);
 }
 .headingOfReport {
   font-size: 10px;
@@ -299,7 +360,7 @@ main img {
   position: absolute;
   top: 0%;
   right: 0%;
-  box-shadow: -5px 0px 10px rgb(221, 221, 221);
+  box-shadow: -5px 0px 10px rgb(40, 40, 40);
 }
 #rAi p {
   color: rgb(94, 91, 91);
@@ -312,7 +373,7 @@ main img {
   justify-content: space-between;
   padding: 20px 10px 20px 10px;
   background-color: white;
-  box-shadow: 5px 0px 10px rgb(75, 73, 73);
+  box-shadow: 5px 0px 10px rgb(40, 40, 40);
 }
 .headerOfrAiH h1 {
   font-size: 20px;
@@ -341,7 +402,7 @@ main img {
 #firstInput i {
   padding: 20px;
 }
-#downBtn{
+#downBtn {
   border: transparent;
   background-color: transparent;
 }
@@ -453,7 +514,7 @@ main img {
   position: absolute;
   top: 0%;
   right: 0%;
-  box-shadow: -5px 0px 10px rgb(221, 221, 221);
+  box-shadow: -5px 0px 10px rgb(40, 40, 40);
   position: fixed;
 }
 #SaI p {
@@ -467,7 +528,7 @@ main img {
   justify-content: space-between;
   padding: 20px 10px 20px 10px;
   background-color: white;
-  box-shadow: 5px 0px 10px rgb(75, 73, 73);
+  box-shadow: 5px 0px 10px rgb(40, 40, 40);
 }
 .headerOfSaI h1 {
   font-size: 20px;
@@ -563,7 +624,7 @@ main img {
   left: 19%;
   font-size: 10px;
   position: fixed;
-  box-shadow: 2px 2px 10px rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px rgb(40, 40, 40);
 }
 #containerSetting i {
   padding-right: 10px;

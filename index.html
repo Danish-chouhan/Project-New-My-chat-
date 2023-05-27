@@ -14,90 +14,122 @@
   <body>
     <!-- head -->
     <div class="MainOfAll">
-      <header class="Header-container">
+      <header id="Header-container">
         <div class="leftNav">
-          <i class="fa-solid fa-video" title="MyChat"></i>
-          <h1 class="Name" title="MyChat">My Chat</h1>
+          <div class="titleOfMychat">
+            <i class="fa-solid fa-video" title="MyChat"></i>
+            <h1 class="Name" title="MyChat">My Chat</h1>
+          </div>
         </div>
+
         <div class="rightNav">
-          <div class="pOfnavRight one">
+          <div class="dateAndTime">
             <div class="currentTime"></div>
             <p class="p1">.</p>
             <div class="currentWeek"></div>
             <p class="p2">,</p>
             <div class="currentMonth"></div>
           </div>
-          <p class="pOfnavRight" id="supportBtn">
-            <button><i class="fa-solid fa-question" title="Support"></i></button>
-          </p>
-          <p class="pOfnavRight" id="ReportBtn">
-            <button><i
-              class="fa-sharp fa-solid fa-circle-exclamation"
-              title="Report a Problem"
-            ></i></button>
-          </p>
-          <p class="pOfnavRight" id="settings">
-            <button><i class="fa-solid fa-gear" title="Setting"></i></button>
-          </p>
-          <p class="pOfnavRight five">
-            <button><i class="fa-solid fa-list-ul" title="Google Apps"></i></button>
-          </p>
-          <p class="pOfnavRight six">
-            <button><i class="fa-solid fa-user" title="Google Accout"></i></button>
-          </p>
+
+          <div class="rightBtntNav">
+            <button class="pOfnavRight" id="supportBtn">
+              <i class="fa-solid fa-question" title="Support"></i>
+            </button>
+
+            <button class="pOfnavRight" id="ReportBtn">
+              <i
+                class="fa-sharp fa-solid fa-circle-exclamation"
+                title="Report a Problem"
+              ></i>
+            </button>
+            
+            <button class="pOfnavRight" id="settings">
+              <i class="fa-solid fa-gear" title="Setting"></i>
+            </button>
+
+            <button class="pOfnavRight five">
+              <i class="fa-solid fa-list-ul" title="Google Apps"></i>
+            </button>
+
+            <button class="pOfnavRight six">
+              <i class="fa-solid fa-user" title="Google Accout"></i>
+            </button>
+          </div>
         </div>
       </header>
 
       <!-- main -->
       <main id="Main-container">
-        <div class="leftPortion">
-          <div class="leftPortionHead">
-            <h1>Premium video meeting Now free for everyone</h1>
+        <div class="innerContainerOfMain">
+          <!-- left partition -->
+
+          <div class="leftPartition">
+            <h1>Premium video meetings. Now free for everyone.</h1>
             <p>
               We re-engineered the service we built for secure business
-              meetings, Google Meet, to make it free and available for all.
+              meetings, My Chat, to make it free and available for all.
             </p>
-            <div class="buttons">
-              <button>☏ New meeting</button>
-              <input type="text" placeholder=" ⌨  Enter a code or link" />
+            <div class="btnsOfMain">
+              <button id="leftBtnOfMain"><span>☏</span> New meeting</button>
+              <input type="text" placeholder="⌨ Enter a code or Link" />
+            </div>
+            <p><a href="#">Learn More </a>about My Chat</p>
+            <div id="NewMeetingContainer" class="activeNewMeetingContainer">
+              <i class="fa-solid fa-xmark" id="exitMeet"></i>
+              <button id="btn1">
+                <a href="#"
+                  ><i class="fa-solid fa-link"></i>Create a Meeting for later</a
+                >
+              </button>
+              <button id="btn2">
+                <a href="#"
+                  ><i class="fa-solid fa-plus"></i>Start an instant meeting</a
+                >
+              </button>
+              <button id="btn3">
+                <a href="#"
+                  ><i class="fa-solid fa-calendar-days"></i>Schedule in Google
+                  Calender</a
+                >
+              </button>
             </div>
           </div>
-          <div class="leftPortionfooter">
-            <h3><a href=""> Learn more</a> about My-chat</h3>
-          </div>
-        </div>
 
-        <!-- rightPortion -->
-        <div class="rightPortion">
-          <!-- headOfRightPortion  -->
-          <div class="headOfrightPortion">
-            <div class="introImages">
-              <img
-                src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg"
-                alt=""
-                id="img1"
-              />
-              <img
-                src="https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg"
-                alt=""
-                id="img2"
-                class="img2OfRightPortion"
-              />
+          <!-- right partition -->
+
+          <div class="rightPartition">
+            <div class="switchesToChangeTheImage">
+              <button id="leftArrow" title="Left">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="images" id="ImagesAbsolute">
+                <img
+                  src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg"
+                  alt=""
+                  id="image1st"
+                />
+                <img
+                  src="https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg"
+                  alt=""
+                  id="image2nd"
+                  class="visible2"
+                />
+                <div class="textsOfImages">
+                  <h1 id="H1OfImages">Get a link you can share</h1>
+                  <p id="pOfImages">
+                    Click <span>New meeting</span> to get a link you can send to
+                    people you want to meet with
+                  </p>
+                  <div class="points">
+                    <li id="firstLi"></li>
+                    <li id="secondLi"></li>
+                  </div>
+                </div>
+              </div>
+              <button id="rightArrow" title="Right">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
-            <button id="leftArrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button id="rightArrow">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <!-- footerOfRightPortion -->
-          <div class="footerOfRightPortion">
-            <h1 id="h1Fotter">Get a link you can share</h1>
-            <p id="pOfFooterOfRightPortion">
-              click New meeting to get a link you can send to people you want to
-              meet with
-            </p>
           </div>
         </div>
       </main>
