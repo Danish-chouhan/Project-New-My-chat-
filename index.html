@@ -14,14 +14,15 @@
   <body>
     <!-- head -->
     <div class="MainOfAll">
-      <header id="Header-container">
+      <header id="Header-container" class="ActiveOfNav">
+        <!-- left nav -->
         <div class="leftNav">
           <div class="titleOfMychat">
             <i class="fa-solid fa-video" title="MyChat"></i>
             <h1 class="Name" title="MyChat">My Chat</h1>
           </div>
         </div>
-
+        <!-- right nav -->
         <div class="rightNav">
           <div class="dateAndTime">
             <div class="currentTime"></div>
@@ -42,7 +43,7 @@
                 title="Report a Problem"
               ></i>
             </button>
-            
+
             <button class="pOfnavRight" id="settings">
               <i class="fa-solid fa-gear" title="Setting"></i>
             </button>
@@ -57,11 +58,26 @@
           </div>
         </div>
       </header>
+      <!-- header for mobile -->
 
+      <div id="HeaderforMobile" class="activeOfHead">
+        <div id="NavHeaderforMobile">
+          <button id="navMobile">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div id="TitleHeaderforMobile">
+          <i class="fa-solid fa-video" title="MyChat"></i>
+          <h1>MY-Chat</h1>
+        </div>
+        <div id="ProfileHeaderforMobile">
+          <button><i class="fa-solid fa-user" title="Google Accout"></i></button>
+        </div>
+      </div>     
       <!-- main -->
       <main id="Main-container">
         <div class="innerContainerOfMain">
-          <!-- left partition -->
+          <!-- left partition for desktop-->
 
           <div class="leftPartition">
             <h1>Premium video meetings. Now free for everyone.</h1>
@@ -71,6 +87,7 @@
             </p>
             <div class="btnsOfMain">
               <button id="leftBtnOfMain"><span>☏</span> New meeting</button>
+              <button id="rightBtnOfMain">Join with a Code</button>
               <input type="text" placeholder="⌨ Enter a code or Link" />
             </div>
             <p><a href="#">Learn More </a>about My Chat</p>
@@ -94,15 +111,14 @@
               </button>
             </div>
           </div>
-
           <!-- right partition -->
-
           <div class="rightPartition">
-            <div class="switchesToChangeTheImage">
-              <button id="leftArrow" title="Left">
-                <i class="fa-solid fa-arrow-left"></i>
-              </button>
               <div class="images" id="ImagesAbsolute">
+                <div class="switchesToChangeTheImage">
+                <button id="leftArrow" title="Left">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div id="Images">
                 <img
                   src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg"
                   alt=""
@@ -114,6 +130,11 @@
                   id="image2nd"
                   class="visible2"
                 />
+              </div>
+                <button id="rightArrow" title="Right">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
                 <div class="textsOfImages">
                   <h1 id="H1OfImages">Get a link you can share</h1>
                   <p id="pOfImages">
@@ -123,12 +144,8 @@
                   <div class="points">
                     <li id="firstLi"></li>
                     <li id="secondLi"></li>
-                  </div>
                 </div>
               </div>
-              <button id="rightArrow" title="Right">
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
             </div>
           </div>
         </div>
@@ -146,7 +163,7 @@
     <!-- report a Problem -->
     <div id="containerOfReportaProblem" class="activeReport">
       <div class="headingOfReport">
-        <h1>Send feedback to Google</h1>
+        <h1>Send feedback to My chat</h1>
         <i class="fa-solid fa-xmark" id="exitReport"></i>
       </div>
       <div class="imgOfProblem">
@@ -211,7 +228,7 @@
             We may email you for more information or updates
           </h1>
         </div>
-        <p class="secondP">
+        <p class="secondPOfrAi">
           Some <a href="#">account and system information </a> be sent to
           Google. We will use it to fix problems and improve our services,
           subject to our <a href="#"> Privacy Policy </a>and

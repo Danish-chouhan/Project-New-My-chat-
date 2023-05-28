@@ -20,9 +20,11 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   grid-template-rows: 1fr;
-  box-shadow: 10px 10px 10px black;
+  border: 1px solid black;
 }
-
+#HeaderforMobile {
+  visibility: hidden;
+}
 .leftNav {
   background-color: white;
   display: grid;
@@ -81,6 +83,9 @@
 }
 
 /* main */
+main {
+  margin-top: -120px;
+}
 .innerContainerOfMain {
   display: grid;
   grid-template-rows: 1fr;
@@ -110,8 +115,8 @@
   border-bottom: 1px solid rgb(208, 208, 208);
 }
 .btnsOfMain button {
-  width: 150px;
-  margin: 0 20px 0 0;
+  width: 160px;
+  margin: 0 5px 0 0;
   border-radius: 5px;
   border: none;
   color: white;
@@ -119,7 +124,7 @@
 }
 .btnsOfMain button:hover {
   background-color: rgba(45, 45, 213, 0.946);
-  box-shadow: 1px 1px 3px black;
+  box-shadow: 0px 0px 3px black;
 }
 .btnsOfMain input {
   width: 250px;
@@ -135,9 +140,12 @@
   font-weight: 700;
   text-decoration: none;
 }
+
 /* new meeting container */
 #exitMeet {
   text-align: center;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 #exitMeet:hover {
   background-color: rgb(213, 212, 212);
@@ -159,7 +167,6 @@
   text-align: start;
   font-size: 15px;
   height: 100px;
-  border-radius: 10px;
   border: none;
   padding: 20px;
   color: black;
@@ -202,6 +209,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  justify-content: space-between;
   padding: 30px 30px;
   margin: 40px 0px 0px 35px;
 }
@@ -209,14 +217,9 @@ span {
   font-weight: 900;
 }
 #leftArrow {
-  position: absolute;
-  right: 39%;
-  top: 27%;
+  /* margin */
 }
 #rightArrow {
-  position: absolute;
-  right: 10%;
-  top: 27%;
 }
 .images {
   padding: 0px 100px;
@@ -247,13 +250,13 @@ span {
   color: rgb(192, 192, 192);
 }
 
-.LeftLi{
+.LeftLi {
   color: blue;
 }
-.RightLi{
+.RightLi {
   color: blue;
 }
-.defaultLi{
+.defaultLi {
   color: blue;
 }
 
@@ -294,7 +297,6 @@ span {
 .ActiveSupport {
   visibility: hidden;
 }
-
 /* report a problem */
 .activeReport {
   visibility: hidden;
@@ -503,7 +505,7 @@ span {
 #boxOfOptionrAi button:hover {
   background-color: rgb(205, 205, 205);
 }
-/* Suggest an Issue */
+/* Suggest an Idea */
 .ActiveSaI {
   visibility: hidden;
 }
@@ -694,4 +696,332 @@ span {
   margin-top: 3%;
   font-size: 30px;
   text-shadow: 1px 1px 2px black;
+}
+@media only screen and (max-width: 1080px) {
+  .MainOfAll {
+    position: fixed;
+  }
+  #Header-container {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr;
+    height: 710px;
+    width: 30%;
+    position: absolute;
+    top: 4%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.647);
+  }
+  .ActiveOfNav {
+    visibility: hidden;
+  }
+  .leftNav {
+    background-color: white;
+    padding: 10px 20px;
+  }
+  .rightNav {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: start;
+  }
+  .dateAndTime {
+    font-size: 15px;
+  }
+  .rightBtntNav {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .rightBtntNav i {
+    font-size: 30px;
+  }
+  .rightBtntNav button {
+    height: 50px;
+    width: 50px;
+    margin: 90px 0px 0 80px;
+  }
+  #HeaderforMobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    top: 0%;
+    box-shadow: 0px 0px 7px black;
+    border: 1px solid rgba(117, 117, 117, 0.26);
+    max-width: 340px;
+    width: 100%;
+    background-color: white;
+    visibility: visible;
+  }
+  #HeaderforMobile button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+  }
+  #HeaderforMobile button:hover {
+    background-color: rgb(216, 213, 213);
+  }
+  #HeaderforMobile button:active {
+    background-color: rgb(242, 242, 242);
+    border: 2px solid rgb(108, 107, 107);
+  }
+  #HeaderforMobile #TitleHeaderforMobile {
+    display: flex;
+    font-size: 9px;
+  }
+  #HeaderforMobile #TitleHeaderforMobile i {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  #ProfileHeaderforMobile {
+    text-align: right;
+  }
+  .five {
+    visibility: hidden;
+  }
+  .six {
+    visibility: hidden;
+  }
+
+  /* support */
+
+  #MainContainerOfSupport {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 300px;
+    padding: 10px 0;
+    box-shadow: 5px 5px 10px rgb(40, 40, 40);
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    position: fixed;
+    border-radius: 3px;
+  }
+  #MainContainerOfSupport i {
+    text-align: center;
+  }
+
+  /* report */
+
+  #containerOfReportaProblem {
+    width: 100%;
+    height: 100%;
+  }
+  /* report an issue */
+  #rAi {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    box-shadow: -5px 0px 10px rgb(40, 40, 40);
+  }
+  .headerOfrAiH {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    box-shadow: 5px 0px 10px rgb(40, 40, 40);
+  }
+  .headerOfrAiH h1 {
+    font-size: 15px;
+  }
+  .headerOfrAiH i {
+    padding: 0px 10px;
+    font-size: 25px;
+  }
+  .firstP {
+    font-size: 12px;
+    margin: 5px 30px 5px 30px;
+  }
+  .thirdH1 {
+    font-size: 10px;
+    text-align: left;
+    margin: 30px 30px 15px 30px;
+  }
+  .FirstbtnOfrAi {
+    margin: 20px 20px 20px 20px;
+    background-color: white;
+    color: rgb(115, 115, 173);
+    border: 1px solid rgb(72, 70, 70);
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+  }
+  .FirstbtnOfrAi:hover {
+    background-color: rgba(95, 95, 142, 0.603);
+    color: white;
+    border: 4px solid blue;
+  }
+  .thirdInput h1 {
+    font-size: 10px;
+  }
+
+  .secondPOfrAi {
+    font-size: 11px;
+    text-align: justify;
+    margin: 10px;
+  }
+
+  .footerOfrAi {
+    box-shadow: 0px 10px 10px rgb(112, 112, 112);
+  }
+  .footerOfrAi button {
+    margin: 40px 0px 20px 210px;
+    height: 40px;
+    width: 120px;
+    border: transparent;
+    background-color: rgb(182, 182, 182);
+    color: black;
+  }
+  /* option of report an issue */
+  #boxOfOptionrAi {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 15px 15px 15px 15px;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    top: 28%;
+    right: 0px;
+    width: 91%;
+    height: 300px;
+  }
+
+  /* suggest an issue */
+  #SaI {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    box-shadow: -5px 0px 10px rgb(40, 40, 40);
+    position: fixed;
+  }
+  #SaI p {
+    color: rgb(94, 91, 91);
+    font-size: 12px;
+  }
+  #SaI h1 {
+    color: rgb(67, 66, 66);
+    font-size: 11px;
+  }
+  .headerOfSaI h1 {
+    font-size: 20px;
+  }
+  .headerOfSaI i {
+    padding: 0px 10px;
+    font-size: 25px;
+  }
+  .secondH1SaI {
+    font-size: 17px;
+    margin: 25px 20px 5px 20px;
+  }
+  .thirdInputSaI {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 32px 5px 32px;
+  }
+  .secondPSaI a {
+    text-decoration: none;
+  }
+
+  .footerOfSaI {
+    margin: 100px 0px 10px 0px;
+    box-shadow: 10px 0 10px rgb(112, 112, 112);
+    padding: 10px 10px;
+  }
+  .footerOfSaI button {
+    margin: 20px 0px 20px 210px;
+    height: 40px;
+    width: 120px;
+    border: transparent;
+    background-color: rgb(182, 182, 182);
+    color: black;
+  }
+
+  /* main */
+
+  .innerContainerOfMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftPartition h1,
+  p {
+    visibility: hidden;
+  }
+  .leftPartition {
+    max-width: 340px;
+    width: 100%;
+    display: grid;
+    margin: -290px 0px -60px -20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .leftPartition input {
+    visibility: hidden;
+  }
+  .leftPartition button{
+    height: 35px;
+    border-radius: 50px;
+  }
+  #rightBtnOfMain{
+    background-color: transparent;
+    border: 1px solid rgb(84, 83, 83);
+    color: rgb(21, 21, 221);
+}
+#leftBtnOfMain{
+  border: 1px solid rgb(21, 21, 221);
+}
+/* New Meeting container */
+#NewMeetingContainer{
+   position: absolute;
+   bottom: 0%;
+   top: 39%;
+   width: 357px;
+   left: 0%;
+   right: 0%;
+   background-color: white;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+}
+#NewMeetingContainer button{
+  border-radius: 0px;
+  height: 100%;
+  width: 100%;
+}
+#exitMeet{
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius:40px;
+}
+.images{
+ margin: 90px 0px 0 -100px;
+}
+.switchesToChangeTheImage{
+ margin: 5px 0px 0 -10px;
+}
+.switchesToChangeTheImage img{
+  height: 250px;
+  width: 250px;
+}
+#H1OfImages{
+  font-size: 20px;
+  margin: 0 20px 0 20px;
+}
+#pOfImages{
+  visibility: visible;
+  margin: 10px ;
+}
 }
