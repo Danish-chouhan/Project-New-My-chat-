@@ -55,8 +55,7 @@ RightArrow.addEventListener("click", () => {
   imgs2.classList.remove("visible2");
   container.classList.add("activeNewMeetingContainer");
   H1Image.innerText = "Plan ahead";
-  PImage.innerHTML =
-    "<p>Click <span>New meeting</span> to schedule meetings in Google Calendar and send invites to participants</p>";
+  PImage.innerHTML = "<p>Click <span>New meeting</span> to schedule meetings in Google Calendar and send invites to participants</p>";
   Li1.classList.remove("LeftLi");
   Li2.classList.add("RightLi");
   Li1.classList.remove("defaultLi");
@@ -66,8 +65,7 @@ LeftArrow.addEventListener("click", () => {
   imgs2.classList.add("visible2");
   container.classList.add("activeNewMeetingContainer");
   H1Image.innerText = "Get a link you can share";
-  PImage.innerHTML =
-    "<p>Click <span>New meeting</span> to get a link you can send to people you want to meet with</p>";
+  PImage.innerHTML = "<p>Click <span>New meeting</span> to get a link you can send to people you want to meet with</p>";
   Li2.classList.remove("RightLi");
   Li1.classList.add("LeftLi");
 });
@@ -158,26 +156,29 @@ btnOfOption.addEventListener('click', () => {
   boxOfOption.classList.remove("activeBoxOfOption");
   container.classList.add("activeNewMeetingContainer");
 });
-btnOfOption.addEventListener("dblclick", () => {
-  boxOfOption.classList.add("activeBoxOfOption");
-});
 option1.addEventListener("click", () => {
   h1OfOption.innerText = "Join a Meeting";
+  boxOfOption.classList.add("activeBoxOfOption");
 });
 option2.addEventListener("click", () => {
   h1OfOption.innerText = "Speak or hear";
+  boxOfOption.classList.add("activeBoxOfOption");
 });
 option3.addEventListener("click", () => {
   h1OfOption.innerText = "View participate Video";
+  boxOfOption.classList.add("activeBoxOfOption");
 });
 option4.addEventListener("click", () => {
   h1OfOption.innerText = "Present Contant";
+  boxOfOption.classList.add("activeBoxOfOption");
 });
 option5.addEventListener("click", () => {
   h1OfOption.innerText = "View content";
+  boxOfOption.classList.add("activeBoxOfOption");
 });
 option6.addEventListener("click", () => {
   h1OfOption.innerText = "Other";
+  boxOfOption.classList.add("activeBoxOfOption");
 });
 
 // Suggest an idea to Mychat
@@ -239,4 +240,17 @@ navBtn.addEventListener('click',()=>{
 })
 navBtn.addEventListener('dblclick',()=>{
   navigationBar.classList.add("ActiveOfNav")
+})
+
+// joining page
+
+const btnForActivateJoining = document.getElementById("rightBtnOfMain")
+const joiningContainer = document.getElementById("MainContainerOfJoining")
+const backArrowOfJoining = document.getElementById("backArrowJoing")
+
+btnForActivateJoining.addEventListener('click',()=>{
+  joiningContainer.classList.remove("activeJoining")
+})
+backArrowOfJoining.addEventListener('click',()=>{
+  joiningContainer.classList.add("activeJoining")
 })
